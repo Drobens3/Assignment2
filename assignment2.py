@@ -18,11 +18,10 @@ class Assignment2:
     #Task 4 (String Manipulation)
     def modifyYear(self, n):
         year_str = str(self.year)
-        modified_year = year_str[:2] * n  
-        for i in range(1, len(year_str), 2):
-            modified_year += year_str[i]  
-        modified_year *= n 
-        return modified_year
+        first_two = year_str[:2] * n
+        odd_chars = year_str[1::2] * n
+        return first_two + odd_chars
+
     
     #Task 5 (Loop and Conditional statements)
     def checkGoodString(string):
