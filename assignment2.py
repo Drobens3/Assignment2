@@ -20,7 +20,7 @@ class Assignment2:
         year_str = str(self.year)
         modified_year = year_str[:2] * n 
         for i in range(1, len(year_str), 2):
-            modified_year += year_str[i]
+            modified_year += year_str[i] * n 
         return modified_year
     
     #Task 5 (Loop and Conditional statements)
